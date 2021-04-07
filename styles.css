@@ -5,6 +5,7 @@
 }
 body {
     background: #000;
+    overflow: hidden;
 }
 .container {
     text-align: center;
@@ -111,11 +112,14 @@ body {
         color: white;
         text-shadow: 4px 4px 95px #1c1cf0, 4px 4px 95px #1c1cf0,
         4px 4px 95px #1c1cf0;
+        margin-bottom: -50px;
     }
     85% {
         letter-spacing: 20px;
+        font-size: 350px;
         margin-left: 0%;
         margin-right: 0%;
+        margin-bottom: -60px;
     }
     95% {
         letter-spacing: 6px;
