@@ -15,26 +15,40 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
 }
-.container .text2 {
+.container span {
     display: block;
 }
-.name {
+.text1 {
     color:rgba(255, 255, 255, 0.076);
     text-transform: capitalize;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 6px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     background: black;
     position: relative;
     animation: text 8s ease-in-out 0s 1;
 }
 .text2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     color: red;
+    animation: text2 8s ease 0s 1;
 }
-
+@keyframes text2 {
+    0% {
+        color: transparent;
+        transform: rotate(0deg);
+    }
+    88% {
+        color: transparent;
+        transform: rotate(0deg);
+    }
+    90% {
+        color: inherit;
+        transform: rotate(1080deg);
+    }
+}
 @keyframes text {
     0% {
         color: white;
@@ -46,15 +60,12 @@ body {
     }
     15% {
         text-shadow: white;
-        letter-spacing: px;
-        font-size: px;
         margin-left: 10%;
         margin-right: 0px;
     }
     30% {
         text-shadow: 2px 2px 50px hotpink, 2px 2px 50px hotpink, 2px 2px 50px hotpink;
         background-color: black;
-        margin-bottom: -40px;
         margin-left: 0px;
         margin-right: 10%;
     }
@@ -64,7 +75,6 @@ body {
     45% {
         text-shadow: 4px 4px 95px hotpink, 4px 4px 95px hotpink, 4px 4px 95px hotpink;
         background-color: rgba(0, 0, 0, 0.841);
-        margin-bottom: -50px;
         letter-spacing: 25px;
         font-size: 80px;
         margin-left: 15%;
@@ -84,7 +94,6 @@ body {
         text-shadow: 2px 2px 50px #fefe22, 2px 2px 50px #fefe22, 
         2px 2px 50px #fefe22;
         background-color: rgba(0, 0, 0, 0.841);
-        margin-bottom: -40px;
         letter-spacing: 30px;
         font-size: 90px;
         margin-left: 0px;
@@ -102,7 +111,6 @@ body {
         text-shadow: 4px 4px 95px #39ff14 , 4px 4px 95px #39ff14,
          4px 4px 95px #39ff14;
         background-color: black;
-        margin-bottom: -40px;
         letter-spacing: 35px;
         font-size: 110px;
         margin-left: 10%;
@@ -112,14 +120,12 @@ body {
         color: white;
         text-shadow: 4px 4px 95px #1c1cf0, 4px 4px 95px #1c1cf0,
         4px 4px 95px #1c1cf0;
-        margin-bottom: -50px;
     }
     85% {
         letter-spacing: 20px;
-        font-size: 350px;
+        font-size: 250px;
         margin-left: 0%;
         margin-right: 0%;
-        margin-bottom: -60px;
     }
     90% {
         transform: rotate(0deg);
@@ -128,6 +134,7 @@ body {
         letter-spacing: 6px;
         transform: rotate(360deg);
         font-size: 20px;
+        margin-bottom: -40px;
         margin-right: 0%;
     }
 
